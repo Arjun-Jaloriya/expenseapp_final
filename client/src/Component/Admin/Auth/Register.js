@@ -27,7 +27,7 @@ const Register = () => {
       // formData.append('photo',photo);
 
       const { data } = await axios.post(
-        "https://https://zany-plum-wasp.cyclic.app/api/auth/register",
+        "https://zany-plum-wasp.cyclic.app/api/auth/register",
 
        {name,email,password,phone,address}
       );
