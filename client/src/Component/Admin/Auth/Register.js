@@ -27,7 +27,7 @@ const Register = () => {
       formData.append('photo',photo);
 
       const { data } = await axios.post(
-        "https://crazy-ruby-dungarees.cyclic.app/api/auth/register",
+        "https://https://zany-plum-wasp.cyclic.app/api/auth/register",
 
         formData,{ headers: { "Content-Type": "application/json" }, withCredentials: true }
       );
