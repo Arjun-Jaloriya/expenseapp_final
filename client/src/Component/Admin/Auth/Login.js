@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://zany-plum-wasp.cyclic.app/api/auth/login",
         { email, password }
       );
       if (data.success) {
