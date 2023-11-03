@@ -29,7 +29,7 @@ const Register = () => {
       const { data } = await axios.post(
         "https://zany-plum-wasp.cyclic.app/api/auth/register",
 
-       {name,email,password,phone,address}
+       {name,email,password,phone,address},{ headers: { "Content-Type": "application/json" }, withCredentials: true }
       );
       console.log(hiiiii);
       if (data && data.success) {
