@@ -31,6 +31,7 @@ const Register = () => {
 
        {name,email,password,phone,address}
       );
+      console.log(hiiiii);
       if (data && data.success) {
         toast.success(data && data.msg);
         Navigate("/login");
