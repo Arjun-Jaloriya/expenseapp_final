@@ -18,18 +18,16 @@ const Register = () => {
 
   const handleSubmit = async () => {
     try {
-      // const formData = new FormData();
-      // formData.append('name',name);
-      // formData.append('email',email);
-      // formData.append('password',password);
-      // formData.append('phone',phone);
-      // formData.append('address',address);
+      const formData = new FormData();
+      formData.append('name',name);
+      formData.append('email',email);
+      formData.append('password',password);
+      formData.append('phone',phone);
+      formData.append('address',address);
       // formData.append('photo',photo);
 
       const { data } = await axios.post(
-        "https://zany-plum-wasp.cyclic.app/api/auth/register",
-
-       {name,email,password,phone,address}
+        "https://zany-plum-wasp.cyclic.app/api/auth/register",formData
       );
       
       if (data && data.success) {
