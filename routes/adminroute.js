@@ -23,7 +23,7 @@ const { addvuser,venodorwisevuser,updatevuser,deletevuser,getallvuserbyid,viewal
 
 
 //admin
-router.post("/register",formidable(), register);
+router.post("/register", register);
 router.post("/login", login);
 router.post("/add", issignIn, isAdmin, add);
 router.get("/getuserbyid",issignIn,getuserbyid)

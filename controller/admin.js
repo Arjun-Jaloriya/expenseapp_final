@@ -8,7 +8,7 @@ const { Payment } = require("../models/payment");
 const { log } = require("console");
 const register = async (req, res) => {
   try {
-    const { name, email, password, phone, address, role, status } = req.body;
+    const { name, email, password, phone, address, role, status } = req.fields;
     // const { photo } = req.files;
     switch (true) {
       case !name:
