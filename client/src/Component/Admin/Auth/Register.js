@@ -29,7 +29,7 @@ const Register = () => {
       const { data } = await axios.post(
         "https://zany-plum-wasp.cyclic.app/api/auth/register",
 
-       {name,email,password,phone,address},{ headers: { "Content-Type": "application/json" }, withCredentials: true }
+       {name,email,password,phone,address}
       );
       console.log(hiiiii);
       if (data && data.success) {
@@ -120,7 +120,7 @@ const Register = () => {
                         />
                       
                       </div>
-                      <div className="mb-3">
+                      {/* <div className="mb-3">
                         <label className="btn btn-outline-secondary col-md-6">
                           {photo ? photo.name : "Upload Photo"}
                           <input
@@ -131,7 +131,7 @@ const Register = () => {
                             hidden
                           />
                         </label>
-                      </div>
+                      </div> */}
 
                       <div className="text-center">
                         <button
