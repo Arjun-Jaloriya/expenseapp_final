@@ -27,7 +27,7 @@ const Register = () => {
       // formData.append('photo',photo);
 
       const { data } = await axios.post(
-        "https://zany-plum-wasp.cyclic.app/api/auth/register",formData
+        "https://careful-pinafore-clam.cyclic.app/api/auth/register",formData
       );
       
       if (data && data.success) {

@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async () => {
     try {
       const { data } = await axios.post(
-        "https://zany-plum-wasp.cyclic.app/api/auth/login",
+        "https://careful-pinafore-clam.cyclic.app/api/auth/login",
         { email, password }
       );
       if (data.success) {
