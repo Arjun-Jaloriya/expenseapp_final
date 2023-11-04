@@ -18,7 +18,7 @@ const path = require("path");
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname,"./client/public")));
+app.use(express.static(path.join(__dirname,"./client/build")));
 
 
 app.use("/api/auth",authroutes);
@@ -28,7 +28,7 @@ app.use("/api/report/",reportRouter);
 
 
 app.use('*',function(req,res){
-    res.sendFile(path.join(__dirname,"./client/public/index.html"));
+    res.sendFile(path.join(__dirname,"./client/build/index.html"));
 });
 
 app.listen(port,()=>{
